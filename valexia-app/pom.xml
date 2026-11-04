@@ -5,13 +5,15 @@
 
   <groupId>com.valexia</groupId>
   <artifactId>valexia-app</artifactId>
-  <version>1.0</version>
+  <version>1.0-Snapshot-${author.name}</version>
 
   <name>valexia-app</name>
   <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+  <url>https://www.example.com</url>
 
   <properties>
+    <java.version>25</java.version>
+    <author.name>Mohd-Saddam</author.name>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.release>25</maven.compiler.release>
   </properties>
@@ -40,10 +42,16 @@
       <artifactId>junit-jupiter-params</artifactId>
       <scope>test</scope>
     </dependency>
+    <dependency>
+      <groupId>org.hibernate.orm</groupId>
+      <artifactId>hibernate-core</artifactId>
+      <version>7.4.13.Final</version>
+      <scope>compile</scope>
+    </dependency>
   </dependencies>
 
   <build>
-    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (perhaps moved to parent pom) -->
       <plugins>
         <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
         <plugin>
